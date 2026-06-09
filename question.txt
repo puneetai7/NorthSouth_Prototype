@@ -1,0 +1,1 @@
+follow the attached template structure i need to solve this problem statement -  NorthSouth Coffee, a chain with 120 locations, has seen its loyalty programme engagement drop 40% in six months. Customers sign up but stop using the app after their first free drink. Your task: design and run a 5-agent workflow to diagnose and fix their loyalty problem. complete this pro
