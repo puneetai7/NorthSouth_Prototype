@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthSouth Coffee | Loyalty Recovery Pitch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .coffee-bg { background-color: #FDF8F5; }
+        .coffee-accent { color: #6F4E37; }
+        .coffee-btn { background-color: #6F4E37; color: white; }
+        .coffee-btn:hover { background-color: #5D402E; }
+        .agent-card { transition: transform 0.3s ease; }
+        .agent-card:hover { transform: translateY(-5px); }
+        .step-active { border-left: 4px solid #6F4E37; background-color: #FFF; }
+        .workflow-step { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="coffee-bg text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-orange-100 py-4 px-8 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-coffee coffee-accent text-2xl"></i>
+                <span class="font-bold text-xl tracking-tight">NorthSouth <span class="coffee-accent">Coffee</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#problem" class="hover:text-brown-700">The Crisis</a>
+                <a href="#team" class="hover:text-brown-700">The Team</a>
+                <a href="#workflow" class="hover:text-brown-700">The Workflow</a>
+                <a href="#results" class="hover:text-brown-700">Outcome</a>
+            </div>
+            <button class="coffee-btn px-6 py-2 rounded-full font-semibold transition shadow-md">
+                Run Simulation
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="problem" class="py-20 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block uppercase tracking-wider">The Problem Statement</span>
+                <h1 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Stopping the <span class="text-red-600">40% Drop</span> in Loyalty Engagement
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    NorthSouth Coffee has a "First-Drink Churn" problem. 120 locations are seeing users sign up, redeem their first free coffee, and never return. 
+                </p>
+                <div class="flex items-center space-x-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600">-40%</div>
+                        <div class="text-sm text-gray-500">Engagement</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-900">120</div>
+                        <div class="text-sm text-gray-500">Locations</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-900">10%</div>
+                        <div class="text-sm text-gray-500">Retention</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-orange-50">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-bold text-lg">Current User Journey</h3>
+                    <span class="text-xs text-gray-400">Real-time Telemetry</span>
+                </div>
+                <div class="space-y-6">
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div><span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Signup & First Drink</span></div>
+                            <div class="text-right"><span class="text-xs font-semibold inline-block text-green-600">100%</span></div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-100">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div><span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">Second Purchase (30 Days)</span></div>
+                            <div class="text-right"><span class="text-xs font-semibold inline-block text-red-600">10%</span></div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-red-100">
+                            <div style="width:10%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-orange-50 rounded-xl border border-orange-100 text-sm text-orange-800 italic">
+                    "The reward is seen as the end of the journey, not the beginning. We need a bridge."
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Agents -->
+    <section id="team" class="py-20 bg-white px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">The 5-Agent Innovation Team</h2>
+                <p class="text-gray-600">Specialized AI agents working in a structured workflow.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <!-- Researcher -->
+                <div id="agent-maya" class="agent-card bg-orange-50 p-6 rounded-2xl border border-orange-100 text-center">
+                    <div class="w-20 h-20 bg-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center text-orange-600 text-2xl font-bold">MP</div>
+                    <h3 class="font-bold">Maya Patel</h3>
+                    <p class="text-xs text-orange-600 font-semibold mb-2 uppercase">Researcher</p>
+                    <p class="text-xs text-gray-500 leading-tight">Evidence-driven analysis of POS and cohort patterns.</p>
+                </div>
+                <!-- Manager -->
+                <div id="agent-tom" class="agent-card bg-brown-50 p-6 rounded-2xl border border-gray-100 text-center" style="background-color: #f7f3f0;">
+                    <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600 text-2xl font-bold">TR</div>
+                    <h3 class="font-bold">Tom Reynolds</h3>
+                    <p class="text-xs text-gray-600 font-semibold mb-2 uppercase">Manager</p>
+                    <p class="text-xs text-gray-500 leading-tight">Orchestrates tasks, quality gates, and synthesis.</p>
+                </div>
+                <!-- Designer -->
+                <div id="agent-lucas" class="agent-card bg-blue-50 p-6 rounded-2xl border border-blue-100 text-center">
+                    <div class="w-20 h-20 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-600 text-2xl font-bold">LO</div>
+                    <h3 class="font-bold">Lucas Ortega</h3>
+                    <p class="text-xs text-blue-600 font-semibold mb-2 uppercase">Designer</p>
+                    <p class="text-xs text-gray-500 leading-tight">Translates insights into buildable UX flows.</p>
+                </div>
+                <!-- Maker -->
+                <div id="agent-anna" class="agent-card bg-green-50 p-6 rounded-2xl border border-green-100 text-center">
+                    <div class="w-20 h-20 bg-green-200 rounded-full mx-auto mb-4 flex items-center justify-center text-green-600 text-2xl font-bold">AC</div>
+                    <h3 class="font-bold">Anna Chen</h3>
+                    <p class="text-xs text-green-600 font-semibold mb-2 uppercase">Maker</p>
+                    <p class="text-xs text-gray-500 leading-tight">Ships tested, telemetry-rich code for experiments.</p>
+                </div>
+                <!-- Marketer -->
+                <div id="agent-priya" class="agent-card bg-purple-50 p-6 rounded-2xl border border-purple-100 text-center">
+                    <div class="w-20 h-20 bg-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center text-purple-600 text-2xl font-bold">PS</div>
+                    <h3 class="font-bold">Priya Singh</h3>
+                    <p class="text-xs text-purple-600 font-semibold mb-2 uppercase">Marketer</p>
+                    <p class="text-xs text-gray-500 leading-tight">Drives distribution through CRM and messaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Workflow Simulation -->
+    <section id="workflow" class="py-20 px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">The Innovation Sprint</h2>
+                <p class="text-gray-600">A step-by-step diagnostic and implementation workflow.</p>
+            </div>
+            
+            <div class="space-y-4" id="workflow-steps">
+                <!-- Step 1 -->
+                <div class="workflow-step p-6 rounded-xl bg-white shadow-sm border border-gray-100 opacity-50" id="step1">
+                    <div class="flex items-start">
+                        <div class="bg-orange-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Intelligence: Root Cause Analysis</h4>
+                            <p class="text-sm text-gray-500 mb-4">Maya (@Maya) scans transaction logs and churn signals.</p>
+                            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-orange-400 font-mono text-xs">
+                                <span class="text-orange-600 font-bold">@Maya:</span> Found "The Reward Cliff". 88% of users stop engagement within 48h of redeeming the free drink. It's not the coffee; it's the lack of a next goal. Recommendation: Micro-rewards.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="workflow-step p-6 rounded-xl bg-white shadow-sm border border-gray-100 opacity-50" id="step2">
+                    <div class="flex items-start">
+                        <div class="bg-gray-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Orchestration: The Sprint Contract</h4>
+                            <p class="text-sm text-gray-500 mb-4">Tom (@Tom) defines the success metric and gates.</p>
+                            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-600 font-mono text-xs">
+                                <span class="text-gray-700 font-bold">@Tom:</span> Experiment set: "The 30-Day Bridge". Goal: +15% second-purchase rate. Lucas to design "Progress Path", Anna to instrument telemetry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="workflow-step p-6 rounded-xl bg-white shadow-sm border border-gray-100 opacity-50" id="step3">
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Solution: Low-Friction Design</h4>
+                            <p class="text-sm text-gray-500 mb-4">Lucas (@Lucas) creates the "Streak" wireframe.</p>
+                            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-400 font-mono text-xs">
+                                <span class="text-blue-600 font-bold">@Lucas:</span> Prototype ready. Visual "Coffee Bean" streak bar appears immediately after 1st redemption. 3 more visits for a "Golden Cup" badge and 50% off.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="workflow-step p-6 rounded-xl bg-white shadow-sm border border-gray-100 opacity-50" id="step4">
+                    <div class="flex items-start">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Build: Telemetry & Deployment</h4>
+                            <p class="text-sm text-gray-500 mb-4">Anna (@Anna) implements the streak logic and A/B tags.</p>
+                            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-green-400 font-mono text-xs">
+                                <span class="text-green-600 font-bold">@Anna:</span> Deployed to 10 test locations. Feature flag `loyalty_bridge_v1` active. Telemetry firing on visit events.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="workflow-step p-6 rounded-xl bg-white shadow-sm border border-gray-100 opacity-50" id="step5">
+                    <div class="flex items-start">
+                        <div class="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">5</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Distribution: Lifecycle Push</h4>
+                            <p class="text-sm text-gray-500 mb-4">Priya (@Priya) launches the "Next Cup" campaign.</p>
+                            <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-purple-400 font-mono text-xs">
+                                <span class="text-purple-600 font-bold">@Priya:</span> Push sequence active. Users get "You're 1 cup away from Golden status" notification 3 days after their free drink.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <button onclick="runSimulation()" id="run-btn" class="coffee-btn px-8 py-3 rounded-full font-bold shadow-lg flex items-center space-x-2 mx-auto">
+                    <i class="fas fa-play"></i>
+                    <span>Run Workflow Simulation</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-20 px-8 bg-white border-t border-orange-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-green-50 p-6 rounded-2xl border border-green-100 scale-90 opacity-50 transition-all duration-500" id="stat-1">
+                            <div class="text-sm text-green-600 font-bold uppercase mb-2">Retention Lift</div>
+                            <div class="text-4xl font-bold text-gray-900">+47%</div>
+                            <div class="text-xs text-gray-500 mt-2">Combined Intervention</div>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 scale-90 opacity-50 transition-all duration-500" id="stat-2">
+                            <div class="text-sm text-blue-600 font-bold uppercase mb-2">Time to Signal</div>
+                            <div class="text-4xl font-bold text-gray-900">14d</div>
+                            <div class="text-xs text-gray-500 mt-2">Rapid A/B Testing</div>
+                        </div>
+                        <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100 scale-90 opacity-50 transition-all duration-500" id="stat-3">
+                            <div class="text-sm text-orange-600 font-bold uppercase mb-2">Cost per Lead</div>
+                            <div class="text-4xl font-bold text-gray-900">-22%</div>
+                            <div class="text-xs text-gray-500 mt-2">Organic CRM Loops</div>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 scale-90 opacity-50 transition-all duration-500" id="stat-4">
+                            <div class="text-sm text-gray-600 font-bold uppercase mb-2">ROI</div>
+                            <div class="text-4xl font-bold text-gray-900">3.8x</div>
+                            <div class="text-xs text-gray-500 mt-2">On Sprint Spend</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-4xl font-bold mb-6">The Verdict: <br><span class="coffee-accent">Scale to All 120 Stores</span></h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        By deploying the 5-agent workflow, we didn't just guess at the problem—we diagnosed it through data, built a targeted solution, and measured it in isolation.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Eliminated "Reward Cliff" through micro-rewards.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Automated CRM loops based on telemetry.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Verified ROI before full-chain rollout.</span>
+                        </li>
+                    </ul>
+                    <button class="coffee-btn w-full py-4 rounded-xl font-bold text-lg shadow-lg">
+                        Download Full Spec (PDF)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-white text-center">
+        <div class="flex items-center justify-center space-x-2 mb-4">
+            <i class="fas fa-coffee text-orange-400 text-2xl"></i>
+            <span class="font-bold text-xl">NorthSouth <span class="text-orange-400">Coffee</span></span>
+        </div>
+        <p class="text-gray-500 text-sm">AI Innovation Workflow &copy; 2026. Designed for Excellence.</p>
+    </footer>
+
+    <script>
+        function runSimulation() {
+            const steps = [
+                { step: 'step1', agent: 'agent-maya' },
+                { step: 'step2', agent: 'agent-tom' },
+                { step: 'step3', agent: 'agent-lucas' },
+                { step: 'step4', agent: 'agent-anna' },
+                { step: 'step5', agent: 'agent-priya' }
+            ];
+
+            let i = 0;
+            const btn = document.getElementById('run-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Simulation Running...</span>';
+
+            const interval = setInterval(() => {
+                if (i > 0) {
+                    document.getElementById(steps[i-1].step).classList.add('opacity-50');
+                    document.getElementById(steps[i-1].step).classList.remove('ring-2', 'ring-brown-400', 'bg-white', 'shadow-md');
+                    document.getElementById(steps[i-1].agent).classList.remove('scale-110', 'shadow-lg', 'ring-2', 'ring-orange-400');
+                }
+
+                if (i < steps.length) {
+                    const stepEl = document.getElementById(steps[i].step);
+                    const agentEl = document.getElementById(steps[i].agent);
+                    
+                    stepEl.classList.remove('opacity-50');
+                    stepEl.classList.add('ring-2', 'ring-brown-400', 'bg-white', 'shadow-md');
+                    stepEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    agentEl.classList.add('scale-110', 'shadow-lg', 'ring-2', 'ring-orange-400');
+                    
+                    i++;
+                } else {
+                    clearInterval(interval);
+                    btn.innerHTML = '<i class="fas fa-check"></i><span>Simulation Complete</span>';
+                    btn.classList.replace('coffee-btn', 'bg-green-600');
+                    
+                    // Show stats
+                    document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                        ['stat-1', 'stat-2', 'stat-3', 'stat-4'].forEach((id, idx) => {
+                            setTimeout(() => {
+                                const el = document.getElementById(id);
+                                el.classList.remove('scale-90', 'opacity-50');
+                                el.classList.add('scale-100', 'opacity-100');
+                            }, idx * 200);
+                        });
+                    }, 500);
+                }
+            }, 1500);
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
